@@ -38,7 +38,6 @@ export function Header() {
                     />
                 </div>
             </nav>
-            Header
         </header>
     )
 }

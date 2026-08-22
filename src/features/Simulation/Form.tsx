@@ -1,5 +1,9 @@
-export function SimulationForm() {
+import { StepProgress } from "./Progress";
+
+export const SimulationForm = () => {
     return(
-        <h1>Form</h1>
+        <>
+            <StepProgress currentStep={1} totalSteps={6} />
+        </>
     )
 }

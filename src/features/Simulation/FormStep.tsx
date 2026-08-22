@@ -2,7 +2,8 @@ import { ArrowLeft, ArrowRight, type LucideIcon } from "lucide-react";
 import { Input, type InputProps } from "../../components/shared/Input";
 import { Button } from "../../components/shared/Button";
 
-interface FormStepPorps {
+export interface FormStepPorps {
+    id: string
     icon: LucideIcon
     title: string
     question: string

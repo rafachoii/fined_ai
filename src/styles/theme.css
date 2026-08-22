@@ -2,7 +2,7 @@
     :root,
     [data-theme='light'] {
         --background: #f8fafc;
-        --foregrounf: #0f1729;
+        --foreground: #0f1729;
         --primary: #925cf0;
         --primary-foreground: #f8fafc;
         --card: #fcfcfe;
@@ -15,7 +15,7 @@
 
     [data-theme='dark'] {
         --background: #0f0d16;
-        --foregrounf: #fcfcfe;
+        --foreground: #fcfcfe;
         --primary: #925cf0;
         --primary-foreground: #fcfcfc;
         --card: #181622;

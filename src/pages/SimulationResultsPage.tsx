@@ -1,20 +1,20 @@
 import { CalendarClock, CreditCardIcon, Goal, Landmark, PiggyBank, Wallet } from "lucide-react";
 import { PageHero } from "../components/shared/PageHero";
 import { Card } from "../features/SimulationResults/Card";
-import type { SimulationFormData } from "../components/data/simulation";
 import { calcMonthlySavings } from "../utils/simulation";
-
-const mock: SimulationFormData = {
-    income: 'R$ 5.000,00',
-    expenses: 'R$ 2.000,00',
-    debts: 'R$ 500,00',
-    goalName: 'Viagem para o Japão',
-    goalAmount: 'R$ 15.000,00',
-    goalDeadline: '120',
-}
+import { useParams } from "react-router-dom";
+import { useSimulationStorage } from "../hooks/useSimulationStorage";
 
 export function SimulationResultsPage() {
-    const data: SimulationFormData = mock
+    const { id } = useParams<{ id: string}>()
+    const { getFormData } = useSimulationStorage()
+
+    const data = id ? getFormData(id) : null
+
+    if (!data) {
+        return <p>Simulação não encontrada.</p>
+    }
+
     const monthlySavings = calcMonthlySavings(data)
 
     return (

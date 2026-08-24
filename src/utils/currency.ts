@@ -16,3 +16,9 @@ export function formatCurrencyNask (value: string): string {
         maximumFractionDigits: 2
     })
 }
+
+export function parseCurrency(value: string): number {
+    return (
+        parseFloat(value.replace(/\./g, '').replace(',', '.').replace('R$', '')) || 0
+    )
+}

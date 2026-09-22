@@ -1,7 +1,7 @@
 # Fined
 
 O Fined é um Educador financeiro web para simular metas pessoais e gerar insights personalizados com o Google Gemini.
-Criei esse projeto para o curso de Frontend React 
+Criei esse projeto durante o Bootcamp de AI React Frontend, promovido pela plataforma DIO.
 
 ## Funcionalidades
 

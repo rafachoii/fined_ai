@@ -28,7 +28,7 @@ export const useSimulationStorage = () => {
         }
 
         const savedData = JSON.parse(storage) as SimulationRecord[]
-        return savedData.find((record) => record.id === id || null)
+        return savedData.find((record) => record.id === id) ?? null
     }
 
     return { saveFormData, getFormData }

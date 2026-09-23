@@ -35,7 +35,7 @@ export function SimulationResultsPage() {
                     icon={Goal}
                     label="Custo da meta"
                     value={data.goalAmount}
-                    subtitle={'Viagem para o Japão'}
+                    subtitle={data.goalName}
                 />
                 <Card
                     icon={CalendarClock}
